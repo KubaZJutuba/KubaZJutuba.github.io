@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zabytki i kultura w Żywcu</title>
+    <title>Żywiec - Perła Beskidów</title>
     <style>
         body {
             font-family: Times New Roman, sans-serif;
@@ -17,11 +17,9 @@
             text-align: center;
             padding: 20px;
         }
-        nav {
-            background: #023047;
+         nav {
+            background: #000000;
             padding: 10px 0;
-            display: flex;
-            align-items: center;
         }
         nav ul {
             list-style: none;
@@ -29,7 +27,6 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            width: 100%;
         }
         nav ul li {
             margin: 0 15px;
@@ -41,17 +38,10 @@
             padding: 10px 15px;
             transition: background 0.3s, color 0.3s;
         }
-        nav ul li a.active {
+        nav ul li a:hover {
             background: #ffb703;
             color: #023047;
             border-radius: 5px;
-        }
-        nav .home-icon {
-            margin-left: 20px;
-        }
-        nav .home-icon img {
-            width: 30px;
-            cursor: pointer;
         }
         .container {
             width: 80%;
@@ -71,19 +61,11 @@
             max-width: 300px;
             margin: 10px;
             border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-        }
-        .gallery p {
-            text-align: center;
         }
         footer {
             background: #005f73;
@@ -92,72 +74,32 @@
             padding: 10px;
             margin-top: 20px;
         }
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-            nav ul li a {
-                font-size: 16px;
-                padding: 8px 10px;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Zabytki i kultura w Żywcu</h1>
+        <h1>Żywiec - Perła Beskidów</h1>
+        <h4>Strona internetowa poświęcona promocji Żywca</h4>
+        <nav>
+            <ul>
+                <li><a href="index1.html">Zabytki i kultura</a></li>
+                <li><a href="index2.html">Przyroda</a></li>
+                <li><a href="index3.html">Gastronomia</a></li>
+                <li><a href="index4.html">Sport</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <div class="home-icon">
-            <a href="index.html"><img src="home-icon.png" alt="Strona główna"></a>
-        </div>
-        <ul>
-            <li><a href="index1.html" class="active">Zabytki i kultura</a></li>
-            <li><a href="index2.html">Przyroda</a></li>
-            <li><a href="index3.html">Gastronomia</a></li>
-            <li><a href="index4.html">Sport</a></li>
-        </ul>
-    </nav>
 
     <div class="container">
         <section class="section">
-            <h2>Zabytki</h2>
-            <div class="gallery">
-                <h3>Stary Zamek</h3>
-                <p>Stary Zamek to historyczna rezydencja z XV wieku, będąca symbolem miasta.</p>
-                <a href="stary_zamek1.jpg"><img src="stary_zamek1.jpg" alt="Stary Zamek - widok z zewnątrz"></a>
-                <p>Widok z zewnątrz</p>
-                <a href="stary_zamek2.jpg"><img src="stary_zamek2.jpg" alt="Stary Zamek - dziedziniec"></a>
-                <p>Dziedziniec zamkowy</p>
-
-                <h3>Nowy Zamek</h3>
-                <p>Nowy Zamek w Żywcu to piękny przykład architektury neorenesansowej.</p>
-                <a href="nowy_zamek1.jpg"><img src="nowy_zamek1.jpg" alt="Nowy Zamek - fasada"></a>
-                <p>Fasada zamku</p>
-                <a href="nowy_zamek2.jpg"><img src="nowy_zamek2.jpg" alt="Nowy Zamek - ogrody"></a>
-                <p>Ogrody zamkowe</p>
-            </div>
+            <h2>O Żywcu</h2>
+            <p>Żywiec to malownicze miasto położone w sercu Beskidów, znane ze swojego pięknego krajobrazu, bogatej historii i słynnego browaru.</p>
         </section>
 
         <section class="section">
-            <h2>Wydarzenia kulturalne</h2>
-            <div class="gallery">
-                <h3>Męskie Granie</h3>
-                <p>Popularny festiwal muzyczny przyciągający największe gwiazdy polskiej sceny.</p>
-                <a href="meskie_granie1.jpg"><img src="meskie_granie1.jpg" alt="Męskie Granie - koncert"></a>
-                <p>Koncert na Męskim Graniu</p>
-
-                <h3>Tydzień Kultury Beskidzkiej</h3>
-                <p>Barwny festiwal folkloru i tradycji Beskidów.</p>
-                <a href="tydzien_kultury1.jpg"><img src="tydzien_kultury1.jpg" alt="Tydzień Kultury Beskidzkiej - występy"></a>
-                <p>Występy folklorystyczne</p>
-            </div>
+            <h2>Mapa</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.539416271639!2d19.21411881590251!3d49.68844537937856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716bb1673f3b555%3A0x21e04d327c498cd1!2sRynek%2C%20%C5%BBywiec!5e0!3m2!1spl!2spl!4v1614953141635!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.539416271639!2d19.20411881590251!3d49.68844537937856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716bb1673f3b555%3A0x21e04d327c498cd1!2sRynek%2C%20%C5%BBywiec!5e0!3m2!1spl!2spl!4v1614953141635!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
-    </div>
 
-    <footer>
-        <p>&copy; 2025 Żywiec. Wszelkie prawa zastrzeżone.</p>
-    </footer>
-</body>
-</html>
+        <section class="section">
