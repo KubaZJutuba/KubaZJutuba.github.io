@@ -1,1 +1,210 @@
-śmieszny
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabytki i kultura w Żywcu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #005f73;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background: #023047;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a.active {
+            background: #ffb703;
+            color: #023047;
+            border-radius: 5px;
+        }
+        nav .home-icon {
+            margin-left: 20px;
+        }
+        nav .home-icon img {
+            width: 30px;
+            cursor: pointer;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery p {
+            text-align: center;
+        }
+        footer {
+            background: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zabytki i kultura w Żywcu</h1>
+    </header>
+
+    <nav>
+        <div class="home-icon">
+            <a href="index.html"><img src="home-icon.png" alt="Strona główna"></a>
+        </div>
+        <ul>
+            <li><a href="index1.html" class="active">Zabytki i kultura</a></li>
+            <li><a href="index2.html">Przyroda</a></li>
+            <li><a href="index3.html">Gastronomia</a></li>
+            <li><a href="index4.html">Sport</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <h2>Zabytki</h2>
+            <div class="gallery">
+                <h3>Stary Zamek</h3>
+                <p>Stary Zamek to historyczna rezydencja z XV wieku, będąca symbolem miasta.</p>
+                <a href="stary_zamek1.jpg"><img src="stary_zamek1.jpg" alt="Stary Zamek - widok z zewnątrz"></a>
+                <p>Widok z zewnątrz</p>
+                <a href="stary_zamek2.jpg"><img src="stary_zamek2.jpg" alt="Stary Zamek - dziedziniec"></a>
+                <p>Dziedziniec zamkowy</p>
+
+                <h3>Nowy Zamek</h3>
+                <p>Nowy Zamek w Żywcu to piękny przykład architektury neorenesansowej.</p>
+                <a href="nowy_zamek1.jpg"><img src="nowy_zamek1.jpg" alt="Nowy Zamek - fasada"></a>
+                <p>Fasada zamku</p>
+                <a href="nowy_zamek2.jpg"><img src="nowy_zamek2.jpg" alt="Nowy Zamek - ogrody"></a>
+                <p>Ogrody zamkowe</p>
+
+                <h3>Konkatedra</h3>
+                <p>Konkatedra Narodzenia NMP to najważniejsza świątynia w Żywcu.</p>
+                <a href="konkatedra1.jpg"><img src="konkatedra1.jpg" alt="Konkatedra - wnętrze"></a>
+                <p>Wnętrze konkatedry</p>
+                <a href="konkatedra2.jpg"><img src="konkatedra2.jpg" alt="Konkatedra - ołtarz"></a>
+                <p>Ołtarz główny</p>
+
+                <h3>Kościół św. Krzyża</h3>
+                <p>Jedna z najstarszych świątyń w regionie.</p>
+                <a href="kosciol_krzyza1.jpg"><img src="kosciol_krzyza1.jpg" alt="Kościół św. Krzyża - fasada"></a>
+                <p>Fasada kościoła</p>
+                <a href="kosciol_krzyza2.jpg"><img src="kosciol_krzyza2.jpg" alt="Kościół św. Krzyża - wnętrze"></a>
+                <p>Wnętrze kościoła</p>
+
+                <h3>Browar</h3>
+                <p>Słynny Browar Żywiec, znany w całej Polsce.</p>
+                <a href="browar1.jpg"><img src="browar1.jpg" alt="Browar - wejście"></a>
+                <p>Wejście do browaru</p>
+                <a href="browar2.jpg"><img src="browar2.jpg" alt="Browar - linia produkcyjna"></a>
+                <p>Linia produkcyjna</p>
+
+                <h3>Ratusz</h3>
+                <p>Zabytkowy ratusz znajdujący się w centrum Rynku.</p>
+                <a href="ratusz1.jpg"><img src="ratusz1.jpg" alt="Ratusz - widok frontowy"></a>
+                <p>Widok frontowy ratusza</p>
+                <a href="ratusz2.jpg"><img src="ratusz2.jpg" alt="Ratusz - wnętrze"></a>
+                <p>Wnętrze ratusza</p>
+
+                <h3>Strażnica</h3>
+                <p>Historyczna strażnica obronna miasta.</p>
+                <a href="straznica1.jpg"><img src="straznica1.jpg" alt="Strażnica - z zewnątrz"></a>
+                <p>Strażnica - z zewnątrz</p>
+                <a href="straznica2.jpg"><img src="straznica2.jpg" alt="Strażnica - wnętrze"></a>
+                <p>Wnętrze strażnicy</p>
+
+                <h3>Dwór w Moszczanicy</h3>
+                <p>Stylowy dwór z XVIII wieku, otoczony pięknym parkiem.</p>
+                <a href="dwor_moszczanica1.jpg"><img src="dwor_moszczanica1.jpg" alt="Dwór w Moszczanicy - widok z parku"></a>
+                <p>Widok z parku</p>
+                <a href="dwor_moszczanica2.jpg"><img src="dwor_moszczanica2.jpg" alt="Dwór w Moszczanicy - wnętrze"></a>
+                <p>Wnętrze dworu</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Wydarzenia kulturalne</h2>
+            <div class="gallery">
+                <h3>Męskie Granie</h3>
+                <p>Popularny festiwal muzyczny przyciągający największe gwiazdy polskiej sceny.</p>
+                <a href="meskie_granie1.jpg"><img src="meskie_granie1.jpg" alt="Męskie Granie - koncert"></a>
+                <p>Koncert na Męskim Graniu</p>
+                <a href="meskie_granie2.jpg"><img src="meskie_granie2.jpg" alt="Męskie Granie - publiczność"></a>
+                <p>Publiczność festiwalu</p>
+
+                <h3>Tydzień Kultury Beskidzkiej</h3>
+                <p>Barwny festiwal folkloru i tradycji Beskidów.</p>
+                <a href="tydzien_kultury1.jpg"><img src="tydzien_kultury1.jpg" alt="Tydzień Kultury Beskidzkiej - występy"></a>
+                <p>Występy folklorystyczne</p>
+                <a href="tydzien_kultury2.jpg"><img src="tydzien_kultury2.jpg" alt="Tydzień Kultury Beskidzkiej - stroje"></a>
+                <p>Tradycyjne stroje regionalne</p>
+
+                <h3>Oscypek Fest</h3>
+                <p>Święto regionalnego przysmaku - oscypka, z licznymi atrakcjami kulinarnymi.</p>
+                <a href="oscypek_fest1.jpg"><img src="oscypek_fest1.jpg" alt="Oscypek Fest - stoiska"></a>
+                <p>Stoiska z oscypkami</p>
+                <a href="oscypek_fest2.jpg"><img src="oscypek_fest2.jpg" alt="Oscypek Fest - degustacje"></a>
+                <p>Degustacje oscypka</p>
+
+                <h3>Miejskie Centrum Kultury</h3>
+                <p>Ośrodek kultury organizujący liczne wydarzenia artystyczne i edukacyjne.</p>
+                <a href="mck1.jpg"><img src="mck1.jpg" alt="MCK - zajęcia artystyczne"></a>
+                <p>Zajęcia artystyczne w MCK</p>
+                <a href="mck2.jpg"><img src="mck2.jpg" alt="MCK - wystawy"></a>
+                <p>Wystawy w MCK</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Żywiec. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
