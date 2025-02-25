@@ -18,7 +18,7 @@
             padding: 20px;
         }
         nav {
-            background: #023047;
+            background: #000000;
             padding: 10px 0;
             display: flex;
             align-items: center;
@@ -26,10 +26,9 @@
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
-            width: 100%;
         }
         nav ul li {
             margin: 0 15px;
@@ -41,17 +40,17 @@
             padding: 10px 15px;
             transition: background 0.3s, color 0.3s;
         }
-        nav ul li a.active {
+        nav ul li a:hover, nav ul li a.active {
             background: #ffb703;
             color: #023047;
             border-radius: 5px;
         }
-        nav .home-icon {
+        .home-icon {
             margin-left: 20px;
         }
-        nav .home-icon img {
+        .home-icon img {
             width: 30px;
-            cursor: pointer;
+            height: 30px;
         }
         .container {
             width: 80%;
@@ -71,19 +70,15 @@
             max-width: 300px;
             margin: 10px;
             border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-        .gallery p {
+        .image-caption {
             text-align: center;
+            font-size: 14px;
         }
         footer {
             background: #005f73;
@@ -92,67 +87,110 @@
             padding: 10px;
             margin-top: 20px;
         }
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-            nav ul li a {
-                font-size: 16px;
-                padding: 8px 10px;
-            }
+        .spacer {
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Zabytki i kultura w Żywcu</h1>
+        <h4>Strona internetowa poświęcona promocji Żywca</h4>
+        <nav>
+            <a class="home-icon" href="index.html"><img src="home-icon.png" alt="Strona główna"></a>
+            <ul>
+                <li><a href="index1.html" class="active">Zabytki i kultura</a></li>
+                <li><a href="index2.html">Przyroda</a></li>
+                <li><a href="index3.html">Gastronomia</a></li>
+                <li><a href="index4.html">Sport</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <div class="home-icon">
-            <a href="index.html"><img src="home-icon.png" alt="Strona główna"></a>
-        </div>
-        <ul>
-            <li><a href="index1.html" class="active">Zabytki i kultura</a></li>
-            <li><a href="index2.html">Przyroda</a></li>
-            <li><a href="index3.html">Gastronomia</a></li>
-            <li><a href="index4.html">Sport</a></li>
-        </ul>
-    </nav>
 
     <div class="container">
         <section class="section">
             <h2>Zabytki</h2>
-            <div class="gallery">
+            <div class="spacer">
                 <h3>Stary Zamek</h3>
-                <p>Stary Zamek to historyczna rezydencja z XV wieku, będąca symbolem miasta.</p>
-                <a href="stary_zamek1.jpg"><img src="stary_zamek1.jpg" alt="Stary Zamek - widok z zewnątrz"></a>
-                <p>Widok z zewnątrz</p>
-                <a href="stary_zamek2.jpg"><img src="stary_zamek2.jpg" alt="Stary Zamek - dziedziniec"></a>
-                <p>Dziedziniec zamkowy</p>
-
-                <h3>Nowy Zamek</h3>
-                <p>Nowy Zamek w Żywcu to piękny przykład architektury neorenesansowej.</p>
-                <a href="nowy_zamek1.jpg"><img src="nowy_zamek1.jpg" alt="Nowy Zamek - fasada"></a>
-                <p>Fasada zamku</p>
-                <a href="nowy_zamek2.jpg"><img src="nowy_zamek2.jpg" alt="Nowy Zamek - ogrody"></a>
-                <p>Ogrody zamkowe</p>
+                <p>Stary Zamek w Żywcu pochodzi z XV wieku i jest jednym z najstarszych zabytków miasta. Obecnie mieści się w nim Muzeum Miejskie, prezentujące historię regionu. Otoczony jest malowniczym parkiem zamkowym.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="stary-zamek1.jpg" alt="Stary Zamek - widok frontowy">
+                        <div class="image-caption">Stary Zamek - widok frontowy</div>
+                    </div>
+                    <div>
+                        <img src="stary-zamek2.jpg" alt="Wnętrze Starego Zamku">
+                        <div class="image-caption">Wnętrze Starego Zamku</div>
+                    </div>
+                </div>
             </div>
+
+            <div class="spacer">
+                <h3>Nowy Zamek</h3>
+                <p>Nowy Zamek to klasycystyczna rezydencja z XIX wieku, należąca do rodziny Habsburgów. Otoczony jest pięknym parkiem z rzadkimi gatunkami drzew. Zamek nie jest dostępny do zwiedzania, ale park cieszy się dużą popularnością.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="nowy-zamek1.jpg" alt="Nowy Zamek - fasada">
+                        <div class="image-caption">Nowy Zamek - fasada</div>
+                    </div>
+                    <div>
+                        <img src="nowy-zamek2.jpg" alt="Park wokół Nowego Zamku">
+                        <div class="image-caption">Park wokół Nowego Zamku</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h3>Konkatedra Narodzenia NMP</h3>
+                <p>Konkatedra jest jednym z najważniejszych obiektów sakralnych w Żywcu, wzniesionym w XV wieku. Znana jest z gotyckiej architektury i bogato zdobionego wnętrza. Obok niej stoi charakterystyczna dzwonnica z XVII wieku.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="konkatedra1.jpg" alt="Konkatedra - widok z zewnątrz">
+                        <div class="image-caption">Konkatedra - widok z zewnątrz</div>
+                    </div>
+                    <div>
+                        <img src="konkatedra2.jpg" alt="Wnętrze Konkatedry">
+                        <div class="image-caption">Wnętrze Konkatedry</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Podobnie opisz pozostałe zabytki -->
         </section>
 
         <section class="section">
             <h2>Wydarzenia kulturalne</h2>
-            <div class="gallery">
+            <div class="spacer">
                 <h3>Męskie Granie</h3>
-                <p>Popularny festiwal muzyczny przyciągający największe gwiazdy polskiej sceny.</p>
-                <a href="meskie_granie1.jpg"><img src="meskie_granie1.jpg" alt="Męskie Granie - koncert"></a>
-                <p>Koncert na Męskim Graniu</p>
-
-                <h3>Tydzień Kultury Beskidzkiej</h3>
-                <p>Barwny festiwal folkloru i tradycji Beskidów.</p>
-                <a href="tydzien_kultury1.jpg"><img src="tydzien_kultury1.jpg" alt="Tydzień Kultury Beskidzkiej - występy"></a>
-                <p>Występy folklorystyczne</p>
+                <p>Męskie Granie to popularny festiwal muzyczny, który regularnie odbywa się w Żywcu. Przyciąga znanych artystów z całej Polski. Charakteryzuje się niepowtarzalną atmosferą i różnorodnością gatunków muzycznych.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="meskie-granie1.jpg" alt="Scena Męskiego Grania">
+                        <div class="image-caption">Scena Męskiego Grania</div>
+                    </div>
+                    <div>
+                        <img src="meskie-granie2.jpg" alt="Publiczność podczas festiwalu">
+                        <div class="image-caption">Publiczność podczas festiwalu</div>
+                    </div>
+                </div>
             </div>
+
+            <div class="spacer">
+                <h3>Tydzień Kultury Beskidzkiej</h3>
+                <p>Tydzień Kultury Beskidzkiej to największa impreza folklorystyczna regionu. W jej trakcie prezentowane są tradycyjne tańce, muzyka i stroje z różnych zakątków Beskidów. Wydarzenie to przyciąga turystów z całej Polski i zagranicy.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="tkb1.jpg" alt="Tancerze w tradycyjnych strojach">
+                        <div class="image-caption">Tancerze w tradycyjnych strojach</div>
+                    </div>
+                    <div>
+                        <img src="tkb2.jpg" alt="Scena Tygodnia Kultury Beskidzkiej">
+                        <div class="image-caption">Scena Tygodnia Kultury Beskidzkiej</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Podobnie opisz Oscypek Fest i działalność MCK -->
         </section>
     </div>
 
