@@ -1,1 +1,267 @@
-bajern monachjum
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olśniewająca przyroda Żywca</title>
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #005f73;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background: #000000;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background: #ffb703;
+            color: #023047;
+            border-radius: 5px;
+        }
+        .home-icon {
+            margin-left: 20px;
+        }
+        .home-icon img {
+            width: 20px;
+            height: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-caption {
+            text-align: center;
+            font-size: 14px;
+        }
+        footer {
+            background: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .spacer {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Olśniewająca przyroda Żywca</h1>
+        <h4>Oficjalna strona internetowa poświęcona promocji Żywca</h4>
+        <nav>
+            <a class="home-icon" href="index.html"><img src=data:image/png;base64,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 alt="Strona główna"></a>
+            <ul>
+                <li><a href="index1.html" class="active">Zabytki i kultura</a></li>
+                <li><a href="index2.html">Przyroda</a></li>
+                <li><a href="index3.html">Gastronomia</a></li>
+                <li><a href="index4.html">Sport</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>Zabytki</h2>
+            <div class="spacer">
+                <h3>Stary Zamek</h3>
+                <p>Stary Zamek w Żywcu pochodzi z XV wieku i jest jednym z najstarszych zabytków miasta. Obecnie mieści się w nim Muzeum Miejskie, prezentujące historię regionu. Otoczony jest malowniczym parkiem zamkowym.</p>
+                <div class="gallery">
+                    <div>
+                        <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/%C5%BBywiec_Stary_Zamek_001.JPG/360px-%C5%BBywiec_Stary_Zamek_001.JPG>
+                        <div class="image-caption">Stary Zamek - widok frontowy</div>
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Stary_Zamek_w_%C5%BBywcu_-_dziedziniec.jpg" alt="Wnętrze Starego Zamku" alt="Wnętrze Starego Zamku">
+                        <div class="image-caption">Wnętrze Starego Zamku</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h3>Nowy Zamek</h3>
+                <p>Nowy Zamek to klasycystyczna rezydencja z XIX wieku, należąca do rodziny Habsburgów. Otoczony jest pięknym parkiem z rzadkimi gatunkami drzew. Zamek nie jest dostępny do zwiedzania, ale park cieszy się dużą popularnością.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="nowy-zamek1.jpg" alt="Nowy Zamek - fasada">
+                        <div class="image-caption">Nowy Zamek - fasada</div>
+                    </div>
+                    <div>
+                        <img src="nowy-zamek2.jpg" alt="Park wokół Nowego Zamku">
+                        <div class="image-caption">Park wokół Nowego Zamku</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h3>Konkatedra Narodzenia NMP</h3>
+                <p>Konkatedra jest jednym z najważniejszych obiektów sakralnych w Żywcu, wzniesionym w XV wieku. Znana jest z gotyckiej architektury i bogato zdobionego wnętrza. Obok niej stoi charakterystyczna dzwonnica z XVII wieku.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="konkatedra1.jpg" alt="Konkatedra - widok z zewnątrz">
+                        <div class="image-caption">Konkatedra - widok z zewnątrz</div>
+                    </div>
+                    <div>
+                        <img src="konkatedra2.jpg" alt="Wnętrze Konkatedry">
+                        <div class="image-caption">Wnętrze Konkatedry</div>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="description">
+                <h3>Kościół Św. Krzyża</h3>
+                <p>Kościół Św. Krzyża to zabytkowa świątynia o gotyckim charakterze, zbudowana w XV wieku. Znany jest z pięknych fresków i bogato zdobionego ołtarza. Stanowi ważny punkt na religijnej mapie Żywca.</p>
+                <div class="gallery">
+                    <img src="kosciol1.jpg" alt="Kościół Św. Krzyża">
+                    <img src="kosciol2.jpg" alt="Wnętrze Kościoła Św. Krzyża">
+                </div>
+                <p class="gallery-caption">Kościół Św. Krzyża - zewnętrzna fasada i wnętrze świątyni</p>
+            </div>
+
+            <div class="description">
+                <h3>Browar Żywiec</h3>
+                <p>Browar Żywiec to najstarszy browar w regionie, założony w 1856 roku. Zwiedzający mogą poznać historię produkcji piwa i spróbować lokalnych specjałów. Znajduje się tu także interaktywne muzeum.</p>
+                <div class="gallery">
+                    <img src="browar1.jpg" alt="Browar Żywiec">
+                    <img src="browar2.jpg" alt="Muzeum Browaru">
+                </div>
+                <p class="gallery-caption">Browar Żywiec - widok z zewnątrz oraz wnętrze muzeum</p>
+            </div>
+
+            <div class="description">
+                <h3>Ratusz w Żywcu</h3>
+                <p>Ratusz miejski to XIX-wieczny budynek o klasycystycznym stylu, będący siedzibą władz miasta. Jego charakterystyczna wieża dominuje nad rynkiem. Wewnątrz można podziwiać historyczne wnętrza i wystawy.</p>
+                <div class="gallery">
+                    <img src="ratusz1.jpg" alt="Ratusz w Żywcu">
+                    <img src="ratusz2.jpg" alt="Wnętrze Ratusza">
+                </div>
+                <p class="gallery-caption">Ratusz w Żywcu - fasada budynku i sala obrad</p>
+            </div>
+
+            <div class="description">
+                <h3>Strażnica w Żywcu</h3>
+                <p>Strażnica to dawny punkt obronny miasta, pochodzący z XVII wieku. Znajduje się w strategicznym miejscu, zapewniając widok na całą okolicę. Dziś pełni funkcję punktu widokowego.</p>
+                <div class="gallery">
+                    <img src="straznica1.jpg" alt="Strażnica w Żywcu">
+                    <img src="straznica2.jpg" alt="Widok ze Strażnicy">
+                </div>
+                <p class="gallery-caption">Strażnica - wieża strażnicza i panorama Żywca z jej szczytu</p>
+            </div>
+
+            <div class="description">
+                <h3>Dwór w Moszczanicy</h3>
+                <p>Dwór w Moszczanicy to urokliwy budynek z XVIII wieku otoczony malowniczym parkiem. Dawniej pełnił funkcję siedziby szlacheckiej, dziś jest miejscem spotkań kulturalnych. Wnętrza zachowały pierwotny charakter z oryginalnym wyposażeniem.</p>
+                <div class="gallery">
+                    <img src="dwor1.jpg" alt="Dwór w Moszczanicy">
+                    <img src="dwor2.jpg" alt="Wnętrze Dworu w Moszczanicy">
+                </div>
+                <p class="gallery-caption">Dwór w Moszczanicy - widok z zewnątrz i stylowe wnętrze</p>
+            </div>
+        </section>
+
+
+
+
+        <section class="section">
+            <h2>Wydarzenia kulturalne</h2>
+            <div class="spacer">
+                <h3>Męskie Granie</h3>
+                <p>Męskie Granie to popularny festiwal muzyczny, który regularnie odbywa się w Żywcu. Przyciąga znanych artystów z całej Polski. Charakteryzuje się niepowtarzalną atmosferą i różnorodnością gatunków muzycznych.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="meskie-granie1.jpg" alt="Scena Męskiego Grania">
+                        <div class="image-caption">Scena Męskiego Grania</div>
+                    </div>
+                    <div>
+                        <img src="meskie-granie2.jpg" alt="Publiczność podczas festiwalu">
+                        <div class="image-caption">Publiczność podczas festiwalu</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer">
+                <h3>Tydzień Kultury Beskidzkiej</h3>
+                <p>Tydzień Kultury Beskidzkiej to największa impreza folklorystyczna regionu. W jej trakcie prezentowane są tradycyjne tańce, muzyka i stroje z różnych zakątków Beskidów. Wydarzenie to przyciąga turystów z całej Polski i zagranicy.</p>
+                <div class="gallery">
+                    <div>
+                        <img src="tkb1.jpg" alt="Tancerze w tradycyjnych strojach">
+                        <div class="image-caption">Tancerze w tradycyjnych strojach</div>
+                    </div>
+                    <div>
+                        <img src="tkb2.jpg" alt="Scena Tygodnia Kultury Beskidzkiej">
+                        <div class="image-caption">Scena Tygodnia Kultury Beskidzkiej</div>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <h3>Oscypek Fest</h3>
+                <p>Oscypek Fest to kulinarne wydarzenie celebrujące tradycyjny ser podhalański. Oprócz degustacji odbywają się warsztaty produkcji oscypka. Festynowi towarzyszą występy kapel góralskich.</p>
+                <div class="gallery">
+                    <img src="oscypek1.jpg" alt="Oscypek Fest - degustacja">
+                    <img src="oscypek2.jpg" alt="Proces tworzenia oscypka">
+                </div>
+                <p class="gallery-caption">Oscypek Fest - pokaz wędzenia oscypka i regionalne przysmaki</p>
+            </div>
+
+            <div class="description">
+                <h3>Miejskie Centrum Kultury</h3>
+                <p>Miejskie Centrum Kultury organizuje liczne koncerty, wystawy i warsztaty artystyczne. To miejsce spotkań dla pasjonatów sztuki i kultury. Odgrywa kluczową rolę w życiu kulturalnym Żywca.</p>
+                <div class="gallery">
+                    <img src="mck1.jpg" alt="Miejskie Centrum Kultury - wejście">
+                    <img src="mck2.jpg" alt="Wystawa w MCK">
+                </div>
+                <p class="gallery-caption">MCK - budynek centrum i wystawy artystyczne</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Żywiec. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
